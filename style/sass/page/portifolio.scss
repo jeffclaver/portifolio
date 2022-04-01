@@ -1,0 +1,28 @@
+body{
+    background-color: $dark;
+}
+.header{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 35px 0;
+    font-family: 'DM Sans', sans-serif;
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        &--logo{
+            font-size: 26px;
+        }
+        &--list{
+            display: flex;
+            font-size: 18px;
+            &-items{
+                margin-left:  45px;
+            }
+        }
+        a{
+            text-decoration: none;
+            color: $white;
+        }
+    }
+}

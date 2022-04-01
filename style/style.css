@@ -1,0 +1,32 @@
+@import 'https://fonts.googleapis.com/css2?family=DM+Sans&display=swap';
+body {
+  background-color: #171717;
+}
+
+.header {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 35px 0;
+  font-family: "DM Sans", sans-serif;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+}
+.header__nav--logo {
+  font-size: 26px;
+}
+.header__nav--list {
+  display: flex;
+  font-size: 18px;
+}
+.header__nav--list-items {
+  margin-left: 45px;
+}
+.header__nav a {
+  text-decoration: none;
+  color: #F9F9F9;
+}
+
+/*# sourceMappingURL=style.css.map */
