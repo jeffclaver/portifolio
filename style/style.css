@@ -1,14 +1,14 @@
 @import 'https://fonts.googleapis.com/css2?family=DM+Sans&display=swap';
 body {
   background-color: #171717;
-  font-family: "DM Sans", sans-serif;
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
 }
 
 .header {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
   padding: 35px 0;
+  font-family: "DM Sans", sans-serif;
 }
 .header__nav {
   display: flex;
@@ -26,46 +26,6 @@ body {
 }
 .header__nav a {
   text-decoration: none;
-  color: #F9F9F9;
-}
-
-.apresentation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 120px;
-}
-.apresentation__me {
-  display: flex;
-  flex-direction: column;
-}
-.apresentation__me--title {
-  font-size: 36px;
-  color: #F9F9F9;
-  margin-bottom: 18px;
-}
-.apresentation__me--subTitle {
-  font-size: 18px;
-  color: #828282;
-  margin-bottom: 35px;
-}
-.apresentation input[type=button] {
-  padding: 12px 27px;
-  border: 1px solid;
-  cursor: pointer;
-}
-.apresentation__btn {
-  position: absolute;
-  margin-top: 180px;
-}
-.apresentation__btn--download {
-  background-color: #00DF5E;
-  border-color: #00DF5E;
-  color: #171717;
-}
-.apresentation__btn--contact {
-  background-color: inherit;
-  border-color: #333333 !important;
   color: #F9F9F9;
 }
 
