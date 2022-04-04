@@ -38,7 +38,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 120px;
+    margin: 120px 0 180px 0;
+
     &__me {
         display: flex;
         flex-direction: column;
@@ -56,8 +57,6 @@ body {
         }
     }
 
-
-
     input[type=button] {
         padding: 12px 27px;
         border: 1px solid;
@@ -66,19 +65,63 @@ body {
 
     &__btn {
         position: absolute;
-        margin-top:180px;
+        margin-top: 180px;
+
         &--download {
             background-color: $green-light;
             border-color: $green-light;
             color: $dark;
         }
-        
+
         &--contact {
             background-color: inherit;
             border-color: $grey-200 !important;
             color: $white;
         }
     }
+}
 
+.about {
+    text-align: center;
 
+    &__title {
+        font-size: 32px;
+        color: $white;
+    }
+
+    &__text {
+        margin-top: 30px;
+        font-size: 18px;
+        color: $grey;
+        line-height: 1.5;
+    }
+
+    &__social {
+        margin-top: 85px;
+        display: flex;
+        justify-content: space-evenly;
+        h3 {
+            color: $white;
+            font-size: 18px;
+        }
+        
+        p {
+            margin-top: 5px;
+            color: $grey;
+            font-size: 16px;
+        }
+
+        &--instagram,
+        &--email,
+        &--tel {
+            width: 100%;
+            width: 175px;
+            img {
+                margin-bottom: 20px;
+                padding: 20px;
+                background-color: $grey-400;
+                border-radius: 100%;
+            }
+        }
+    }
 }
