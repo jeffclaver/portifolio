@@ -1,28 +1,84 @@
-body{
+body {
     background-color: $dark;
-}
-.header{
+    font-family: 'DM Sans', sans-serif;
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
+}
+
+.header {
     padding: 35px 0;
-    font-family: 'DM Sans', sans-serif;
-    &__nav{
+
+    &__nav {
         display: flex;
         justify-content: space-between;
-        &--logo{
+
+        &--logo {
             font-size: 26px;
         }
-        &--list{
+
+        &--list {
             display: flex;
             font-size: 18px;
-            &-items{
-                margin-left:  45px;
+
+            &-items {
+                margin-left: 45px;
             }
         }
-        a{
+
+        a {
             text-decoration: none;
             color: $white;
         }
     }
+}
+
+
+.apresentation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 120px;
+    &__me {
+        display: flex;
+        flex-direction: column;
+
+        &--title {
+            font-size: 36px;
+            color: $white;
+            margin-bottom: 18px;
+        }
+
+        &--subTitle {
+            font-size: 18px;
+            color: $grey;
+            margin-bottom: 35px;
+        }
+    }
+
+
+
+    input[type=button] {
+        padding: 12px 27px;
+        border: 1px solid;
+        cursor: pointer;
+    }
+
+    &__btn {
+        position: absolute;
+        margin-top:180px;
+        &--download {
+            background-color: $green-light;
+            border-color: $green-light;
+            color: $dark;
+        }
+        
+        &--contact {
+            background-color: inherit;
+            border-color: $grey-200 !important;
+            color: $white;
+        }
+    }
+
+
 }
