@@ -118,13 +118,9 @@ body {
 .projects__container {
   width: 100%;
   max-width: 30%;
-  display: flex;
   background-color: #212121;
-  flex-direction: column;
-  align-self: center;
-  text-align: center;
-  justify-content: center;
   padding: 15px;
+  margin: 30px auto;
 }
 .projects__container--image {
   height: 130px;

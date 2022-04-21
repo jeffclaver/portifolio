@@ -131,21 +131,18 @@ body {
 
 .projects {
     text-align: center;
-    &__title{
+
+    &__title {
         font-size: 32px;
         color: $white;
     }
+
     &__container {
         width: 100%;
         max-width: 30%;
-        display: flex;
         background-color: $grey-400;
-        flex-direction: column;
-        align-self: center;
-        text-align: center;
-        justify-content: center;
         padding: 15px;
-
+        margin: 30px auto;
         &--image {
             height: 130px;
             background-color: $dark;
@@ -153,18 +150,21 @@ body {
             justify-content: center;
             align-items: center;
             margin-bottom: 23px;
+
             p {
                 font-size: 18px;
                 color: $white;
             }
         }
-        &--text{
-            h3{
+
+        &--text {
+            h3 {
                 font-size: 18px;
                 color: $white;
                 margin-bottom: 5px;
             }
-            span{
+
+            span {
                 color: $grey;
             }
         }
