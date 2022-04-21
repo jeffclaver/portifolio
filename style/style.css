@@ -2,12 +2,18 @@
 body {
   background-color: #171717;
   font-family: "DM Sans", sans-serif;
+}
+
+main {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
 }
 
 .header {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
   padding: 35px 0;
 }
 .header__nav {
@@ -118,6 +124,7 @@ body {
 .projects__container {
   width: 100%;
   max-width: 30%;
+  height: 240px;
   background-color: #212121;
   padding: 15px;
   margin: 30px auto;
@@ -153,7 +160,7 @@ body {
 .services__container {
   display: flex;
   gap: 45px;
-  margin-top: 30px;
+  margin: 30px 0 30px 0;
   justify-content: space-evenly;
 }
 .services__container--item {
@@ -177,6 +184,53 @@ body {
   font-size: 32px;
   width: 100%;
   width: 125px;
+}
+
+.skills {
+  text-align: center;
+}
+.skills__title {
+  font-size: 32px;
+  color: #F9F9F9;
+}
+.skills__container {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+.skills__container--item {
+  width: 100%;
+  max-width: 200px;
+  height: 150px;
+  background-color: #212121;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.skills__container--item span {
+  color: #00DF5E;
+  font-size: 45px;
+}
+.skills__container--item .flutter {
+  width: 75px;
+  background-color: #00DF5E;
+  padding: 5px;
+  height: 75px;
+}
+
+.footer {
+  display: flex;
+  margin-top: 185px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  background-color: #212121;
+}
+.footer__developed {
+  color: #F9F9F9;
+}
+.footer__name {
+  color: #00DF5E;
 }
 
 /*# sourceMappingURL=style.css.map */
