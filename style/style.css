@@ -1,38 +1,85 @@
 @import 'https://fonts.googleapis.com/css2?family=DM+Sans&display=swap';
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 body {
   background-color: #171717;
   font-family: "DM Sans", sans-serif;
 }
 
-main {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-}
-
+main,
 .header {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
   padding: 35px 0;
 }
+main__nav,
 .header__nav {
   display: flex;
   justify-content: space-between;
 }
+main__nav--logo,
 .header__nav--logo {
   font-size: 26px;
 }
+main__nav--list,
 .header__nav--list {
   display: flex;
   font-size: 18px;
 }
+main__nav--list-items,
 .header__nav--list-items {
   margin-left: 45px;
 }
+main__nav a,
 .header__nav a {
   text-decoration: none;
   color: #F9F9F9;
+}
+main__nav a:hover,
+.header__nav a:hover {
+  transition: 2s;
+  color: #00DF5E;
 }
 
 .apresentation {
@@ -63,17 +110,32 @@ main {
 .apresentation__btn {
   position: absolute;
   margin-top: 180px;
+  font-weight: 500;
 }
 .apresentation__btn--download {
+  padding: 12px;
+  text-decoration: none;
   background-color: #00DF5E;
   border-color: #00DF5E;
   color: #171717;
 }
+.apresentation__btn--download:active {
+  transition: 0.2s;
+  background-color: inherit;
+  color: #F9F9F9;
+  border: 1px solid #333333;
+}
 .apresentation__btn--contact {
+  padding: 12px;
+  text-decoration: none;
   margin-left: 15px;
   background-color: inherit;
-  border-color: #333333 !important;
+  border: 1px solid #333333;
   color: #F9F9F9;
+}
+.apresentation__btn--contact:active {
+  transition: 0.2s;
+  background-color: #00DF5E;
 }
 
 .about {
@@ -122,14 +184,17 @@ main {
   color: #F9F9F9;
 }
 .projects__container {
+  display: flex;
+  gap: 25px;
+  margin: 30px 0 30px 0;
+}
+.projects__container--items {
   width: 100%;
-  max-width: 30%;
   height: 240px;
   background-color: #212121;
   padding: 15px;
-  margin: 30px auto;
 }
-.projects__container--image {
+.projects__container--items-image {
   height: 130px;
   background-color: #171717;
   display: flex;
@@ -137,16 +202,16 @@ main {
   align-items: center;
   margin-bottom: 23px;
 }
-.projects__container--image p {
+.projects__container--items-image p {
   font-size: 18px;
   color: #F9F9F9;
 }
-.projects__container--text h3 {
+.projects__container--items-text h3 {
   font-size: 18px;
   color: #F9F9F9;
   margin-bottom: 5px;
 }
-.projects__container--text span {
+.projects__container--items-text span {
   color: #828282;
 }
 
@@ -163,7 +228,7 @@ main {
   margin: 30px 0 30px 0;
   justify-content: space-evenly;
 }
-.services__container--item {
+.services__container--items {
   width: 100%;
   max-width: 300px;
   height: 240px;
@@ -175,11 +240,11 @@ main {
   flex-direction: column;
   justify-content: space-evenly;
 }
-.services__container--item span {
+.services__container--items-span {
   color: #00DF5E;
   font-size: 45px;
 }
-.services__container--item p {
+.services__container--items-text {
   color: #828282;
   font-size: 32px;
   width: 100%;
@@ -198,20 +263,21 @@ main {
   margin-top: 30px;
   justify-content: space-between;
 }
-.skills__container--item {
+.skills__container--items {
   width: 100%;
-  max-width: 200px;
+  max-width: 150px;
   height: 150px;
   background-color: #212121;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
-.skills__container--item span {
-  color: #00DF5E;
-  font-size: 45px;
+.skills__container--items-img {
+  max-width: 70px;
+  height: 75px;
 }
-.skills__container--item .flutter {
+.skills__container--items #flutter {
   width: 75px;
   background-color: #00DF5E;
   padding: 5px;
