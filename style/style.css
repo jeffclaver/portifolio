@@ -46,6 +46,10 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 main,
 .header {
   width: 100%;
