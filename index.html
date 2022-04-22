@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio | Jefferson Claver - Front-end e Mobile Developer</title>
-    <link rel="stylesheet" href="./style/reset.css" />
     <link rel="stylesheet" href="./style/style.css" />
 </head>
 
@@ -15,10 +14,10 @@
         <nav class="header__nav">
             <h1 class="header__nav--logo"><a href="">Home</a></h1>
             <ul class="header__nav--list">
-                <li class="header__nav--list-items"><a href="">Sobre mim</a></li>
-                <li class="header__nav--list-items"><a href="">Projetos</a></li>
-                <li class="header__nav--list-items"><a href="">Serviços</a></li>
-                <li class="header__nav--list-items"><a href="">Minhas skills</a></li>
+                <li class="header__nav--list-items"><a href="#about">Sobre mim</a></li>
+                <li class="header__nav--list-items"><a href="#projects">Projetos</a></li>
+                <li class="header__nav--list-items"><a href="#services">Serviços</a></li>
+                <li class="header__nav--list-items"><a href="#skills">Minhas skills</a></li>
             </ul>
         </nav>
     </header>
@@ -29,12 +28,15 @@
                 <h3 class="apresentation__me--subTitle">Desenvolvedor Flutter & Front-End</h3>
             </div>
             <div class="apresentation__btn">
-                <input class="apresentation__btn--download" type="button" value="Download CV">
-                <input class="apresentation__btn--contact" type="button" value="Entrar em contato">
+                <a class="apresentation__btn--download" href="js_CV.pdf" download="curriculo">Download CV</a>
+                <a class="apresentation__btn--contact"
+                    href="https://wa.me/5511957737753?text=Olá estou vindo(a) através do seu portifolio"
+                    target="_blank">Entrar em contato</a>
+
             </div>
-            <img id="image" src="./image.png" />
+            <img id="image" src="./image.png" alt="image" />
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <h2 class="about__title">Sobre mim</h2>
             <p class="about__text">
                 Sou desenvolvedor flutter e front-end com mais de 1 ano de experiência.
@@ -47,92 +49,112 @@
             </p>
             <div class="about__social">
                 <div class="about__social--instagram">
-                    <img src="./instagram.png" alt="">
+                    <a href="https://www.instagram.com/jeffclaver_/" target="_blank"><img src="./instagram.png" alt="icon about Social media"></a>
                     <h3>Instagram</h3>
                     <p>@jeffclaver_</p>
                 </div>
                 <div class="about__social--email">
-                    <img src="./email.png" alt="">
+                    <a href="mailto:jeffclaver@hotmail.com?subject=Assunto: "><img src="./email.png" alt="icon about Email"> </a>
                     <h3>E-mail</h3>
                     <p>jeffclaver@hotmail.com</p>
                 </div>
                 <div class="about__social--tel">
-                    <img src="./tel.png" alt="">
+                    <a href="https://wa.me/5511957737753?text=Olá estou vindo(a) através do seu portifolio"
+                    target="_blank"><img src="./tel.png" alt="icon about Cellphone"> </a>
                     <h3>Telefone</h3>
                     <p>(11) 9 5773-7753</p>
                 </div>
             </div>
         </section>
-        <section class="projects">
+        <section class="projects" id="projects">
             <h2 class="projects__title">
                 Projetos
             </h2>
             <div class="projects__container">
-                <div class="projects__container--image">
-                    <p>Em construção</p>
+                <div class="projects__container--items">
+                    <div class="projects__container--items-image">
+                        <p>Em construção</p>
+                    </div>
+                    <div class="projects__container--items-text">
+                        <h3> Titulo do projeto </h3>
+                        <span> Tecnologia: </span>
+                    </div>
                 </div>
-                <div class="projects__container--text">
-                    <h3> Titulo do projeto </h3>
-                    <span> Tecnologia: </span>
+                <div class="projects__container--items">
+                    <div class="projects__container--items-image">
+                        <p>Em construção</p>
+                    </div>
+                    <div class="projects__container--items-text">
+                        <h3> Titulo do projeto </h3>
+                        <span> Tecnologia: </span>
+                    </div>
+                </div>
+                <div class="projects__container--items">
+                    <div class="projects__container--items-image">
+                        <p>Em construção</p>
+                    </div>
+                    <div class="projects__container--items-text">
+                        <h3> Titulo do projeto </h3>
+                        <span> Tecnologia: </span>
+                    </div>
                 </div>
             </div>
 
         </section>
-        <section class="services">
+        <section class="services" id="services">
             <h2 class="services__title">
                 Serviços
             </h2>
             <div class="services__container">
-                <div class="services__container--item">
+                <div class="services__container--items">
                     <span>
+                        <img src="./smartphone.png" alt="App">
+                    </span>
+                    <p class="services__container--items-text">Sites responsivos</p>
+                </div>
+                <div class="services__container--items">
+                    <span class="services__container--items-span">
                         <>
                     </span>
-                    <p>Criação de sites</p>
+                    <p class="services__container--items-text">Criação de sites</p>
                 </div>
 
-                <div class="services__container--item">
-                    <span>
-                        <img src="./smartphone.png" alt="">
+                <div class="services__container--items">
+                    <span class="services__container--items-span">
+                        <img src="./smartphone.png" alt="App">
                     </span>
-                    <p>Criação de Apps</p>
+                    <p class="services__container--items-text">Criação de Apps</p>
                 </div>
             </div>
         </section>
-        <section class="skills">
+        <section class="skills" id="skills">
             <h2 class="skills__title">
                 Skills
             </h2>
             <div class="skills__container">
 
-                <div class="skills__container--item">
-                    <span>
-                        <img src="./html.png" alt="">
-                    </span>
-
+                <div class="skills__container--items">
+                    <img class="skills__container--items-img" src="./html.png" alt="Html">
                 </div>
-                <div class="skills__container--item">
-                    <span>
-                        <img src="./css.png" alt="">
-                    </span>
-
+                <div class="skills__container--items">
+                    <img class="skills__container--items-img" src="./css.png" alt="CSS">
                 </div>
-                <div class="skills__container--item">
-                    <span>
-                        <img src="./js.png" alt="">
-                    </span>
-
+                <div class="skills__container--items">
+                    <img class="skills__container--items-img" src="./js.png" alt="Javascript">
                 </div>
-                <div class="skills__container--item">
-                    <span>
-                        <img class="flutter" src="./flutter.png" alt="">
-                    </span>
-
+                <div class="skills__container--items">
+                    <img class="skills__container--items-img" id="flutter" src="./flutter.png" alt="Flutter">
                 </div>
             </div>
         </section>
     </main>
     <footer class="footer">
-        <p class="footer__developed">Desenvolvido por <span class="footer__name">Jefferson Claver</span></p>
+        <p class="footer__developed">
+            Desenvolvido por
+            <span class="footer__name">
+                Jefferson Claver
+            </span>
+        </p>
     </footer>
 </body>
 

@@ -4,12 +4,11 @@ body {
 
 }
 
-main {
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-}
+html {
+    scroll-behavior: smooth;
+  }
 
+main,
 .header {
     width: 100%;
     max-width: 960px;
@@ -17,6 +16,7 @@ main {
     padding: 35px 0;
 
     &__nav {
+      
         display: flex;
         justify-content: space-between;
 
@@ -30,13 +30,21 @@ main {
 
             &-items {
                 margin-left: 45px;
+
             }
         }
 
         a {
             text-decoration: none;
             color: $white;
+
+            &:hover {
+                transition: 2s;
+                color: $green-light;
+            }
+
         }
+
     }
 }
 
@@ -72,19 +80,34 @@ main {
 
     &__btn {
         position: absolute;
-        margin-top: 180px;
-
+        margin-top: 180px;  
+        font-weight: 500;
         &--download {
+            padding: 12px;
+            text-decoration: none;
             background-color: $green-light;
             border-color: $green-light;
             color: $dark;
+            
+            &:active {
+                transition: 0.2s;
+                background-color: inherit;
+                color: $white;
+                border: 1px solid $grey-200;            }
         }
-
+        
         &--contact {
+            padding: 12px;
+            text-decoration: none;
             margin-left: 15px;
             background-color: inherit;
-            border-color: $grey-200 !important;
+            border: 1px solid $grey-200;
             color: $white;
+
+            &:active {
+                transition: 0.2s;
+                background-color: $green-light;
+            }
         }
     }
 }
@@ -145,38 +168,43 @@ main {
     }
 
     &__container {
-        width: 100%;
-        max-width: 30%;
-        height: 240px;
-        background-color: $grey-400;
-        padding: 15px;
-        margin: 30px auto;
+        display: flex;
+        gap: 25px;
+        margin: 30px 0 30px 0;
 
-        &--image {
-            height: 130px;
-            background-color: $dark;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 23px;
+        &--items {
+            width: 100%;
+            height: 240px;
+            background-color: $grey-400;
+            padding: 15px;
 
-            p {
-                font-size: 18px;
-                color: $white;
+            &-image {
+                height: 130px;
+                background-color: $dark;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 23px;
+
+                p {
+                    font-size: 18px;
+                    color: $white;
+                }
+            }
+
+            &-text {
+                h3 {
+                    font-size: 18px;
+                    color: $white;
+                    margin-bottom: 5px;
+                }
+
+                span {
+                    color: $grey;
+                }
             }
         }
 
-        &--text {
-            h3 {
-                font-size: 18px;
-                color: $white;
-                margin-bottom: 5px;
-            }
-
-            span {
-                color: $grey;
-            }
-        }
     }
 }
 
@@ -194,7 +222,7 @@ main {
         margin: 30px 0 30px 0;
         justify-content: space-evenly;
 
-        &--item {
+        &--items {
             width: 100%;
             max-width: 300px;
             height: 240px;
@@ -206,13 +234,13 @@ main {
             flex-direction: column;
             justify-content: space-evenly;
 
-            span {
+            &-span {
                 color: $green-light;
                 font-size: 45px;
 
             }
 
-            p {
+            &-text {
                 color: $grey;
                 font-size: 32px;
                 width: 100%;
@@ -235,22 +263,22 @@ main {
         margin-top: 30px;
         justify-content: space-between;
 
-        &--item {
+        &--items {
             width: 100%;
-            max-width: 200px;
+            max-width: 150px;
             height: 150px;
             background-color: $grey-400;
             display: flex;
             flex-direction: column;
             justify-content: center;
-
-            span {
-                color: $green-light;
-                font-size: 45px;
+            align-items: center;
+            &-img {
+                max-width: 70px;
+                height: 75px;
 
             }
-
-            .flutter {
+            
+            #flutter {
                 width: 75px;
                 background-color: $green-light;
                 padding: 5px;
@@ -267,10 +295,12 @@ main {
     align-items: center;
     justify-content: center;
     background-color: $grey-400;
-   &__developed{
+
+    &__developed {
         color: $white;
-   }
-   &__name{
-       color: $green-light;
-   }
+    }
+
+    &__name {
+        color: $green-light;
+    }
 }
