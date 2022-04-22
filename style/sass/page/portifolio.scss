@@ -4,6 +4,10 @@ body {
 
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 main,
 .header {
     width: 100%;
@@ -12,6 +16,7 @@ main,
     padding: 35px 0;
 
     &__nav {
+      
         display: flex;
         justify-content: space-between;
 
